@@ -1,0 +1,39 @@
+.cards {
+  display: none;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.div_container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.div_container.more {
+  align-items: flex-start;
+}
+h4 {
+  width: 80px;
+  text-align: right;
+}
+
+/*media*/
+@media screen and (max-width: 1250px) {
+  .cards {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin: 1rem auto;
+    padding: 10px;
+    border-radius: 3px;
+    box-shadow: 0 0 2px gray;
+  }
+  h4 {
+    font-size: 10px;
+  }
+  p {
+    font-size: 8px;
+  }
+}

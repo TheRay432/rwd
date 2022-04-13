@@ -1,0 +1,19 @@
+$lightBlue: rgb(113, 210, 245);
+$btnRed: red;
+$btnDisable: gray;
+$color-yellow: yellow;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+}
+@import "./table";
+@import "./card";
+/*media*/
