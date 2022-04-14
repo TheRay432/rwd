@@ -5,30 +5,102 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
+  margin: 1rem 0;
+  border-radius: 3px;
+  box-shadow: 0 0 2px gray;
+  &.card_disable {
+    color: $btnDisable;
+  }
 }
 .div_container {
   display: flex;
   align-items: center;
   gap: 1rem;
+  padding: 8px 0;
 }
 .div_container.more {
   align-items: flex-start;
+  p {
+    max-width: 187px;
+    word-break: break-word;
+    word-wrap: break-word;
+  }
+}
+.test {
+  width: 60%;
+}
+.sub_left_container {
+  display: flex;
+  flex-basis: 50%;
+  align-items: baseline;
+  gap: 1rem;
+}
+.sub_right_container {
+  display: flex;
+  flex-basis: 50%;
+  align-items: baseline;
+  gap: 0.3rem;
+  h4 {
+    width: 36px;
+    text-align: left;
+    max-height: 16px;
+  }
+  &.c {
+    align-items: center;
+  }
 }
 h4 {
   width: 80px;
   text-align: right;
 }
+/* .lightBlue {
+  color: $lightBlue;
+} */
+.card_yellow {
+  color: $color-yellow;
+  font-weight: bold;
+  display: flex;
+  font-size: 13px;
+  align-items: flex-start;
+  p {
+    margin-right: 5px;
+    font-size: 12px;
+  }
+  .moneyDiv {
+    height: 14px;
+    font-size: 12px;
+  }
+  .moneyDiv.card_btn_disable {
+    color: $btnDisable;
+  }
+}
+.card_btn_container {
+  width: 70%;
+  display: flex;
+  gap: 8px;
+  margin: 10px auto;
+}
+.btnCard {
+  width: 50%;
+  color: $btnRed;
+  border: 1.5px solid $btnRed;
+  background-color: transparent;
+  padding: 5px 5px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.black {
+  color: black;
+}
 
 /*media*/
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 1249px) {
   .cards {
     display: flex;
     flex-direction: column;
-    width: 95%;
+    width: 95vw;
     margin: 1rem auto;
     padding: 10px;
-    border-radius: 3px;
-    box-shadow: 0 0 2px gray;
   }
   h4 {
     font-size: 10px;
