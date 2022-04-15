@@ -1,6 +1,7 @@
 $lightBlue: rgb(113, 210, 245);
-$btnRed: red;
-$btnDisable: gray;
+$color-red: red;
+$color-disable: gray;
+$color_white: white;
 $color-yellow: rgb(237, 138, 10);
 * {
   margin: 0;
@@ -11,10 +12,8 @@ $color-yellow: rgb(237, 138, 10);
 }
 body {
   display: flex;
-  width: 95%;
+  width: 95vw;
   margin: 0 auto;
 }
-
 @import "./table";
 @import "./card";
-/*media*/

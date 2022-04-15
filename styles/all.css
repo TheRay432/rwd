@@ -11,7 +11,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 95%;
+  width: 95vw;
   margin: 0 auto;
 }
 
@@ -48,9 +48,9 @@ body {
 
 table {
   border-spacing: 0;
-  border-collapse: separate;
   margin-bottom: 2rem;
   display: block;
+  margin: 1rem auto;
 }
 
 .tableHead {
@@ -60,7 +60,7 @@ table {
 .tableHead th {
   padding: 1rem 0;
   color: white;
-  font-size: 5px;
+  font-size: 12px;
 }
 
 .tableHead th:nth-child(1) {
@@ -71,16 +71,15 @@ table {
   border-radius: 0px 3px 3px 0px;
 }
 
-.lightBlue {
-  color: #71d2f5;
-  text-align: center;
-}
-
 tr td {
   border-bottom: 1px solid #c0bdbd;
   text-align: center;
   padding: 1rem 0;
   height: 100%;
+}
+
+.lightBlue {
+  color: #71d2f5;
 }
 
 .shadow {
@@ -89,20 +88,12 @@ tr td {
   border-radius: 5px;
 }
 
-p {
-  display: inline-block;
-}
-
-span.illustrate {
-  border-bottom: 1.5px dashed gray;
-}
-
-h4.illustrate {
+.illustrate {
   border-bottom: 1.5px dashed gray;
 }
 
 p.illustrate {
-  margin-top: 5px;
+  display: inline-block;
   border-bottom: 1.5px dashed gray;
 }
 
@@ -128,6 +119,14 @@ p.illustrate {
   background-color: transparent;
   padding: 5px 5px;
   border-radius: 5px;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.btn_container button:hover {
+  background-color: red;
+  color: white;
 }
 
 .btn_disable {
@@ -138,6 +137,7 @@ p.illustrate {
   background-color: transparent;
   padding: 5px 5px;
   border-radius: 5px;
+  cursor: not-allowed;
 }
 
 .haveBeen {
@@ -173,7 +173,7 @@ p.illustrate {
 }
 
 .cancelOrder td {
-  padding: 2rem 0;
+  /* padding: 2rem 0; */
 }
 
 .cancelOrder td.cancelTD {
@@ -230,14 +230,12 @@ p.illustrate {
           align-items: flex-start;
 }
 
-.div_container.more p {
-  max-width: 187px;
-  word-break: break-word;
-  word-wrap: break-word;
+.div_container.more .test {
+  width: 60%;
 }
 
-.test {
-  width: 60%;
+.div_container.more p {
+  word-break: break-word;
 }
 
 .sub_left_container {
@@ -246,9 +244,9 @@ p.illustrate {
   display: flex;
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 1rem;
 }
 
@@ -258,22 +256,15 @@ p.illustrate {
   display: flex;
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 0.3rem;
 }
 
 .sub_right_container h4 {
-  width: 36px;
+  width: auto;
   text-align: left;
-  max-height: 16px;
-}
-
-.sub_right_container.c {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 h4 {
@@ -281,9 +272,6 @@ h4 {
   text-align: right;
 }
 
-/* .lightBlue {
-  color: $lightBlue;
-} */
 .card_yellow {
   color: #ed8a0a;
   font-weight: bold;
@@ -291,19 +279,14 @@ h4 {
   display: -ms-flexbox;
   display: flex;
   font-size: 13px;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 12px;
 }
 
 .card_yellow p {
   margin-right: 5px;
-  font-size: 12px;
-}
-
-.card_yellow .moneyDiv {
-  height: 14px;
-  font-size: 12px;
 }
 
 .card_yellow .moneyDiv.card_btn_disable {
@@ -329,10 +312,6 @@ h4 {
   margin-bottom: 10px;
 }
 
-.black {
-  color: black;
-}
-
 /*media*/
 @media screen and (max-width: 1249px) {
   .cards {
@@ -354,6 +333,4 @@ h4 {
     font-size: 8px;
   }
 }
-
-/*media*/
 /*# sourceMappingURL=all.css.map */
